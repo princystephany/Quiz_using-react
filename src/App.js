@@ -7,13 +7,26 @@ function App() {
 
   const[questionIndex, setQuestionIndex]=useState(0)
 
+  const[score, setScore]=useState(0)
+
   const present_question = Questions[questionIndex];
- const get_choice =(index) =>
+ 
+ 
+ 
+  const get_choice =(index) =>
 {
-if(present_question.answer===index){
-  alert("success")
+if(present_question.answer===index)
+{
+ setScore=(score+1)
 }
-}  
+
+setQuestionIndex(questionIndex+1);
+}  ;
+
+
+
+
+
     return (
     <div className="quiz_box">
        <div className="quiz_question">
