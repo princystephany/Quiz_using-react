@@ -19,19 +19,22 @@ if(present_question.answer===index)
 {
  setScore=(score+1)
 }
+// const next_question = questionIndex+1;
+// if(next_question<Questions.length)
 
-setQuestionIndex(questionIndex+1);
+// {
+// setQuestionIndex(questionIndex+1);
+
+
 }  ;
 
-
-
-
+ 
 
     return (
     <div className="quiz_box">
        <div className="quiz_question">
 {present_question.question}
-<div className="options">Obtions below
+<div className="options">Options below
 </div>
 
 <ul className="quiz_ul">
